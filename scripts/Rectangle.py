@@ -11,5 +11,9 @@ class Rectangle:
         self.x = x
 
     def draw(self, canvas):
-        # TODO
-        pass
+        if self.x >= canvas.width or self.y >= canvas.height:
+            return
+        else:
+            fill_x_till = min(self.x+self.width, canvas.width)
+            fill_y_till = min(self.y+self.height, canvas.height)
+            canvas.data[self.x: fill_x_till, self.y: fill_y_till] = self.rgb
