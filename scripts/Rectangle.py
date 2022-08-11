@@ -8,7 +8,7 @@ class Rectangle:
         self.width = width
         self.rgb = rgb
         self.y = y
-        self.__x = x
+        self.x = x
 
     def draw(self, canvas):
         # TODO
