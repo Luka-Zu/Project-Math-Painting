@@ -7,7 +7,7 @@ class Square:
         self.length = length
         self.rgb = rgb
         self.y = y
-        self.__x = x
+        self.x = x
 
     def draw(self, canvas):
         # TODO
